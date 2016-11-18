@@ -7,7 +7,7 @@
 <body>
 	<h1>Mind Trix</h1>
 	<p>Welcome one and all to a game of ingenious mind trickery! Do you have what it takes to beat the all-knowing machine? <br>
-	Instructions: Guess a letter of the English alphabet using the provided keybord.</p>
+	Instructions: Guess what letter I'm thinking of by using your keyboard!</p>
 
 <!-- Game involves user playing against computer  
 user: guess letter 
@@ -19,16 +19,9 @@ user: guess letter
 *Tips: 2.	When the player wins, increase the Wins counter and start the game over again (without refreshing the page). 3.	When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins).
 
 
-Structure: store letters using js 
-		   provide keybord on screen for user to click on 
-		   score chart provided 
+Style: Boehemian Circus Freak Era; music, videos, enchantment to dress up-->  
 
-Style: Boehemian Circus Freak Era; music, videos, enchantment to dress up 
-
-Steps:  1. message alerting user welcome to game 
-		2. ask them if they think they will win
-		3. use script from hangman game to list alphabet options on page 
-		4. JS skills: */--> 
+		
 
 <div class="points">
 	<p id="Wins">Wins:</p>
@@ -42,29 +35,8 @@ Steps:  1. message alerting user welcome to game
 </div>
 
 
-<script type="text/javascript">
+<script type="text/javascript" src="assets/javascript/game.js">
 
-window.onload = function () {
-
-	 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
-        'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
-        't', 'u', 'v', 'w', 'x', 'y', 'z'];
-
-
-          var buttons = function () {
-    myButtons = document.getElementById('buttons');
-    letters = document.createElement('ul');
-
-    for (var i = 0; i < alphabet.length; i++) {  /*for loop*/ 
-      letters.id = 'alphabet';
-      list = document.createElement('li');
-      list.id = 'letter';
-      list.innerHTML = alphabet[i];
-      check();
-      myButtons.appendChild(letters);
-      letters.appendChild(list);
-    }
-}	
 
 
 </script>

@@ -1,61 +1,12 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>
-      Data Types, User Input, Conditional Logic
-    </title>
-  </head>
-  <body>
-    <script type="text/javascript">
 
-      var userName = prompt("What's your name?");
-      var confirmCats = confirm("Do you like cats?");
-
-      var petName = "Meeses";
-      var petType = "Tuxedo Cat";
-      var petAge = 5;
-      var petIsCat = true;
-
-      if (confirmCats) {
-        alert(petName + " " + petType + " " + petAge);
-      }
-      else {
-        alert("You don't get my cat's information");
-      }
-
-      if (petIsCat) {
-        alert("My pet is a cat");
-      }
-      else {
-        alert("My pet is not a cat");
-      }
-
-      if (petAge !== 7) {
-        alert("My pet is not 7 years old");
-      }
-
-      if (petAge === 5) {
-        alert("My pet is 5 years old");
-      }
-      else if (petAge < 5) {
-        alert("My pet is less than 5 years old");
-      }
-      else if (petAge > 5) {
-        alert("My pet is older than 5 years old");
-      }
-
-      // document.write() overwrites the entire page. We don't normally use this, but we will today for simplicity
-      document.write("Welcome to our page " + userName);
-
-      var catAge = prompt("How old is your cat?");
-
-      // Won't work as expected
-      alert(catAge + 2);
-
-      // Works as expected
-      alert(parseInt(catAge) + 2);
-
-    </script>
-  </body>
-</html>
+/*Steps:  1. message alerting user welcome to game:  "Welcome to Mind Trix! Click Enter to begin"
+		2. user selection options= alphabets in keybord (make and store array of letters)
+		3. computer stores selected chosen letters (asdfghjkl) are winning letters
+		4. user gets point with correct letter 
+		5. wins accumulated and saved in "Wins"
+		6. user gets points which are stored in "Lossess" section
+		6. provide running list of letters already selected with previous guesses
+		8. list of remaining guesses (user starts with 5 guesses and -1 with each lost guess) 
+		7. 3 wins and 3 losses restart game 
+		8. Provide optional "Play again" button to restart game */
+alert("Welcome to Mind Trix! Click OK to begin."); 
