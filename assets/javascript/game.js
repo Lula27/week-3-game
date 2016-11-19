@@ -11,7 +11,7 @@
 		8. Provide optional "Play again" button to restart game */
 
 
-alert("Welcome to Mind Trix! Click OK to begin."); 
+//alert("Welcome to Mind Trix! Click OK to begin."); 
 
 var choice = 'abcdefghijklmnopqrstuvwxyz'.split(''),  winners ='asdfghjkl'.split(''); 
 console.log(choice, winners); 
@@ -20,3 +20,40 @@ var wins = 0;
 var losses = 0;
 var guessesLeft = 5; 
 var guessesSoFar = []; 
+console.log(wins, losses, guessesLeft, guessesSoFar); 
+
+document.write('scoreboard');
+
+function displayResults () {
+	var display = document.querySelector(".scoreboard"); 
+	var string = '<p>Guesses so far:' + guessesSoFar + '</p>'; 
+	string += '<p>Guesses left:' + guessesLeft + '</p>'; 
+	string += '<p>Wins:' + wins + '</p>';
+	string += '<p>Losses:' + losses + '</p>';
+
+	display.innerTML = string; 
+}
+
+
+document.onkeyup = function(event){
+	var key = event.key; 
+	
+	if(choice.indexOf(key) === 1){
+		return;
+	}
+
+	var computer = winners[Math.floor(Math.random()*winners.length)];
+		if (key === computer){
+			guessesSoFar = [];
+			wins++; 
+			displayResults(guessesSoFar, guessesLeft, wins, losses);
+
+		}
+		else{
+			guessesSoFar.push(key);
+			guessesLeft--;
+			losses++;
+			displayResults(guessesSoFar, guessesLeft, wins, losses); 
+		}
+	}
+
