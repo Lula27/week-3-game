@@ -24,16 +24,20 @@ console.log(wins, losses, guessesLeft, guessesSoFar);
 
 document.write('scoreboard');
 
-function displayResults () {
+function displayResults (whoWon, u, c){
 	var display = document.querySelector(".scoreboard"); 
-	var string = '<p>Guesses so far:' + guessesSoFar + '</p>'; 
-	string += '<p>Guesses left:' + guessesLeft + '</p>'; 
-	string += '<p>Wins:' + wins + '</p>';
-	string += '<p>Losses:' + losses + '</p>';
+	var string = '<p>' + whoWon + '</p>'; 
+	string += '<p>User choice: ' + u + '<p>';
+	string += '<p>Computer choice: ' + c + '<p>';
+	string += '<p>Guesses so far: ' + guessesSoFar; + '</p>'; 
+	string += '<p>Guesses left: ' + guessesLeft; + '</p>'; 
+	string += '<p>Wins: ' + wins; + '</p>';
+	string += '<p>Losses: ' + losses; + '</p>';
 
-	display.innerTML = string; 
+	display.innerHTML = string; 
 }
 
+console.log(displayResults); 
 
 document.onkeyup = function(event){
 	var key = event.key; 
