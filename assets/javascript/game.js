@@ -22,7 +22,7 @@ var guessesLeft = 5;
 var guessesSoFar = []; 
 console.log(wins, losses, guessesLeft, guessesSoFar); 
 
-document.write('scoreboard');
+/*document.write('scoreboard');*/ 
 
 function displayResults (whoWon, u, c){
 	var display = document.querySelector(".scoreboard"); 
@@ -41,12 +41,17 @@ console.log(displayResults);
 
 document.onkeyup = function(event){
 	var key = event.key; 
+	if ((key == 'a')){
+		if (guessesLeft.length < 5){
+			guessesLeft.push(key); 
+		}
+	}
 	
 	if(choice.indexOf(key) === -1){
 		return;
-	}
+	} 
 
-	var computer = winners[Math.floor(Math.random()*winners.length)];
+	var computer = wins[Math.floor(Math.random()*wins.length)];
 		if (key === computer){
 			guessesSoFar = [];
 			wins++; 
@@ -61,3 +66,7 @@ document.onkeyup = function(event){
 		}
 	}
 
+//STUCK! confused right now. Where could I put a for loop to make things seamless? 
+//How do I get my inputs to disappear above the "Guesses so far" section?
+//How can I get hte Guesses left to stay in positive territory (not go past 0)?
+//How to get things to refreshe automatically? location.reload(); 
