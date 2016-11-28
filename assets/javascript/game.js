@@ -11,7 +11,7 @@
 		8. Provide optional "Play again" button to restart game */
 
 
-//alert("Welcome to Mind Trix! Click OK to begin."); 
+alert("Welcome to Mind Trix! Click OK to begin."); 
 
 var choice = 'abcdefghijklmnopqrstuvwxyz'.split(''),  winners ='asdfghjkl'.split(''); 
 console.log(choice, winners); 
@@ -68,5 +68,5 @@ document.onkeyup = function(event){
 
 //STUCK! confused right now. Where could I put a for loop to make things seamless? 
 //How do I get my inputs to disappear above the "Guesses so far" section?
-//How can I get hte Guesses left to stay in positive territory (not go past 0)?
-//How to get things to refreshe automatically? location.reload(); 
+//How can I get the Guesses left to stay in positive territory (not go past 0)?
+//How to get things to refresh automatically? location.reload(); 
