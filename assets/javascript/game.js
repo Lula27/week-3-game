@@ -11,7 +11,7 @@
 		8. Provide optional "Play again" button to restart game */
 
 
-alert("Welcome to Mind Trix! Click OK to begin."); 
+// alert("Welcome to Mind Trix! Click OK to begin."); 
 
 var choice = 'abcdefghijklmnopqrstuvwxyz'.split(''),  winners ='asdfghjkl'.split(''); 
 console.log(choice, winners); 
@@ -24,37 +24,34 @@ console.log(wins, losses, guessesLeft, guessesSoFar);
 
 /*document.write('scoreboard');*/ 
 
-function displayResults (whoWon, u, c){
+function displayResults (whoWon, u, c) {
 	var display = document.querySelector(".scoreboard"); 
 	var string = '<p>' + whoWon + '</p>'; 
-	/*string += '<p>User choice: ' + u + '<p>';
-	string += '<p>Computer choice: ' + c + '<p>'; */
 	string += '<p>Guesses so far: ' + guessesSoFar; + '</p>'; 
 	string += '<p>Guesses left: ' + guessesLeft; + '</p>'; 
-	string += '<p>Wins: ' + wins; + '</p>';
-	string += '<p>Losses: ' + losses; + '</p>';
+	string += '<p>Wins: ' + wins + '</p>';
+	string += '<p>Losses: ' + losses + '</p>';
 
 	display.innerHTML = string; 
 }
 
 console.log(displayResults); 
+//winners ='asdfghjkl'
 
-document.onkeyup = function(event){
+document.onkeyup = function(event) {
 	var key = event.key; 
-	if ((key == 'a')){
-		if (guessesLeft.length < 5){
+		if (guessesLeft.length < 5) {
 			guessesLeft.push(key); 
 		}
 	}
 	
-	if(choice.indexOf(key) === -1){
+	if(choice.indexOf(key) === -1) {
 		return;
 	} 
 
-	var computer = wins[Math.floor(Math.random()*wins.length)];
+	var computer = winners;
 		if (key === computer){
-			guessesSoFar = [];
-			wins++; 
+			guessesSoFar.push(key);
 			displayResults(guessesSoFar, guessesLeft, wins, losses);
 
 		}
@@ -62,6 +59,7 @@ document.onkeyup = function(event){
 			guessesSoFar.push(key);
 			guessesLeft--;
 			losses++;
+			wins++; 
 			displayResults(guessesSoFar, guessesLeft, wins, losses); 
 		}
 	}
