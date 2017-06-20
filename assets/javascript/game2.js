@@ -3,14 +3,19 @@
 
 var numbers, WinningNumbers, LossingNumbers;
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+numbers = ""; 
 
-WinningNumbers = [2, 4, 6, 8, 10];
+WinningNumbers = 2;
 
 LossingNumbers = [3, 5, 7, 9];
 
 
 
 myFunction() {
-	document.getElementById("output").innerHTML = numbers; 
+
+	var total = numbers + WinningNumbers; 
+
+	console.log(total);
+
+
 }
