@@ -10,6 +10,7 @@ var letter = l;
 // 	console.log("Hi!");
 // }
 
-function myFunction() {
-	console.log("Hi!");
+function myFunction(p1, p2) {
+	return p1 * p2; 
+	console.log(return p1 * p2);
 }
