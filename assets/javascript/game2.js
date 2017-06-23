@@ -1,21 +1,15 @@
-// Goal: use keyboard to guess what letters the computer is thinking
-// Use button to reset game
+// Goal: 
 
-var numbers, WinningNumbers, LossingNumbers;
+// Step 1: Have computer print a key from the key board
 
-numbers = ""; 
+var letter = l; 
 
-WinningNumbers = 2;
+// Function to retrive an action 
+// Just like you have to declare a variable, you declare a function!
+// myFunction() {
+// 	console.log("Hi!");
+// }
 
-LossingNumbers = [3, 5, 7, 9];
-
-
-
-myFunction() {
-
-	var total = numbers + WinningNumbers; 
-
-	console.log(total);
-
-
+function myFunction() {
+	console.log("Hi!");
 }
