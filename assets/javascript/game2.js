@@ -26,8 +26,8 @@ function myFunction() {
 
 
 // Get a message to print when user presses key
-document.getElementById("demo2").addEventListener("keydown", myFunction2);
+window.addEventListener("keydown", myFunction2);
 
 function myFunction2() {
-	document.getElementById("demo2").innerHTML = "red";
+	window.style.backgroundColor = "blue";
 }
