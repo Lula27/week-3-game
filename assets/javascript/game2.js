@@ -24,7 +24,7 @@ function myFunction() {
 
 
 
-document.getElementById("demo2").addEventListener("keydown", myFunction);
+document.getElementById("demo2").addEventListener("keydown", anotherFunction);
 
 function anotherFunction() {
 	alert("This is a working function!"); 
