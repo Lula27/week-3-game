@@ -16,32 +16,32 @@
 // }
 
 // Outside of text box turns red when user presses key
-document.getElementById("demo").addEventListener("keydown", myFunction);
+// document.getElementById("demo").addEventListener("keydown", myFunction);
 
-function myFunction() {
-	document.getElementById("demo").style.backgroundColor = "red";
-}
+// function myFunction() {
+// 	document.getElementById("demo").style.backgroundColor = "red";
+// }
 
 
 
-document.getElementById("demo2").addEventListener("keydown", anotherFunction);
+// document.getElementById("demo2").addEventListener("keydown", anotherFunction);
 
-function anotherFunction() {
-	alert("This is a working function!"); 
-}
+// function anotherFunction() {
+// 	alert("This is a working function!"); 
+// }
 
 
 
 
 // Third Box & Function 
 
-document.getElementById("demo3").addEventListener("keydown", toCall); 
+// document.getElementById("demo3").addEventListener("keydown", toCall); 
 
 // Function to cause text to appear
 
-function toCall() {
-	document.getElementById("change").innerHTML = "Hello World!"; 
-}
+// function toCall() {
+// 	document.getElementById("change").innerHTML = "Hello World!"; 
+// }
 
 
 
