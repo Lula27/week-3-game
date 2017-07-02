@@ -42,3 +42,15 @@ document.getElementById("demo3").addEventListener("keydown", toCall);
 function toCall() {
 	document.getElementById("change").innerHTML = "Hello World!"; 
 }
+
+
+
+
+// Change background color with a random text entry
+document.getElementById("magic").addEventListener("keydown", Mago); 
+
+
+// Function
+function Mago() {
+	document.body.style.backgroundColor = "black"; 
+}
