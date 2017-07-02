@@ -29,3 +29,16 @@ document.getElementById("demo2").addEventListener("keydown", anotherFunction);
 function anotherFunction() {
 	alert("This is a working function!"); 
 }
+
+
+
+
+// Third Box & Function 
+
+document.getElementById("demo3").addEventListener("keydown", toCall); 
+
+// Function to cause text to appear
+
+function toCall() {
+	document.getElementById("change").innerHTML = "Hello World!"; 
+}
