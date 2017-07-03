@@ -47,7 +47,7 @@
 
 
 // Change background color with a random text entry
-document.getElementById("magic").addEventListener("keydown", Mago); 
+document.getElementById("magic").addEventListener("click", Mago); 
 
 
 // Function
