@@ -44,13 +44,34 @@
 // }
 
 
-
+// Game Rules
+// 1. User enters mother's name to start game (what if doesn't have mother/bad relationship?)
+// 2. Allows User to Enter Level One - Set of questions on page with button
 
 // Change background color with a random text entry
-document.getElementById("magic").addEventListener("click", Mago); 
+document.getElementById("magic").addEventListener("keydown", Mago); 
 
 
 // Function
-function Mago() {
+function Mago () {
 	document.body.style.backgroundColor = "black"; 
+}
+
+
+// Create New Section w/ Questions
+document.getElementById("game").addEventListener("click", addElement);
+
+
+function addElement () {
+	// Create new div element & git it some content
+	var newDiv = document.createElement("div");
+	var questionOne = document.createTextNode("Test...");
+	newDiv.appendChild(questionOne);
+
+
+	// add newly created element and its content into the DOM
+	var currentDiv = document.getElementById("div1");
+	document.body.insertBefore(newDiv, currentDiv); 
+
+
 }
