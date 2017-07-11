@@ -75,3 +75,8 @@ function addElement () {
 
 
 }
+
+// for loop to get text to stay
+for (i = 0; i < 2; i++) {
+	document.getElementById("game").addEventListener("click", addElement);
+}
