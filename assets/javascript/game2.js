@@ -80,3 +80,16 @@ function addElement () {
 for (i = 0; i < 2; i++) {
 	document.getElementById("game").addEventListener("click", addElement);
 }
+
+// Practice with Loop
+var td;
+for (var t = 1; t < 8; t++) {
+	td = document.getElementById("game");
+	if (typeof window.addEventListener === "function"){
+		(function(_td) {
+			td.addEventListener("click", function(){
+				console.log(_td);
+			});
+		})(td); 
+	}
+}
