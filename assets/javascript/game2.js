@@ -93,3 +93,10 @@ for (var t = 1; t < 8; t++) {
 		})(td); 
 	}
 }
+
+
+document.getElementById("submit").addEventListener("click",Response); 
+
+function Response () {
+	alert("One of these is correct"); 
+}
