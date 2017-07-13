@@ -82,15 +82,16 @@ for (i = 0; i < 2; i++) {
 }
 
 // Practice with Loop
-var td;
+var text = "Name me: '\"I was the conductor of the Underground Railroad for eight years, and I can say what most conductors can't say; I never ran my train off the track and I never lost a passenger.\"";
+var td; 
 for (var t = 1; t < 8; t++) {
 	td = document.getElementById("game");
 	if (typeof window.addEventListener === "function"){
 		(function(_td) {
 			td.addEventListener("click", function(){
-				console.log(_td);
+				console.log(_text);
 			});
-		})(td); 
+		})(text); 
 	}
 }
 
