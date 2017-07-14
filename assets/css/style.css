@@ -1,11 +1,9 @@
 /*CSS page for hangman game index.html*/
-h1 {
-	text-align: center; 
-}
-p {
-	text-align: center;
-}
 
 body {
 	background-color: #fffff;
+}
+
+.alignleft {
+	text-align: left;
 }
