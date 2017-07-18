@@ -98,12 +98,7 @@ for (i = 0; i < 2; i++) {
 // 	}
 // }
 
-
-document.getElementById("submit").addEventListener("click",Response); 
-
-function Response () {
-
-	// create variables for the different options 
+// create variables for the different options 
 	var wrong1 = document.getElementById("truth");
 	var wrong2 = document.getElementById("yaa");
 	var wrong3 = document.getElementById("nzinga");
@@ -113,4 +108,13 @@ function Response () {
 	if (right) {
 		alert("You got it!"); 
 	}
+
+
+right.addEventListener("click",Response); 
+
+// Response for button 
+function Response () {
+
+	alert("Correct!"); 
+
 }
