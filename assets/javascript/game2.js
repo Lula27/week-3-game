@@ -110,7 +110,7 @@ function Response () {
 	var right = document.getElementById("harriet");
 
 	// Select Correct 
-	if () {
-		alert("One of these is correct"); 
+	if (right) {
+		alert("You got it!"); 
 	}
 }
