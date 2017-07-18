@@ -1,5 +1,8 @@
 // Goal: 
 
+// Game Rules
+// Hit Start -> Takes you to past, present or future randomly 
+
 // Step 1: Have computer print a key from the key board
 
 // var letter = l; 
@@ -99,5 +102,15 @@ for (i = 0; i < 2; i++) {
 document.getElementById("submit").addEventListener("click",Response); 
 
 function Response () {
-	alert("One of these is correct"); 
+
+	// create variables for the different options 
+	var wrong1 = document.getElementById("truth");
+	var wrong2 = document.getElementById("yaa");
+	var wrong3 = document.getElementById("nzinga");
+	var right = document.getElementById("harriet");
+
+	// Select Correct 
+	if () {
+		alert("One of these is correct"); 
+	}
 }
