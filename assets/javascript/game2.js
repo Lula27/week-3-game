@@ -46,4 +46,11 @@ right.addEventListener("click", correct);
 
 function correct () {
 	alert("Righto");
+
+	// Add text to section
+	document.getElementById("question2").innerHTML = "Correct...on to question 2!"; 
+
+	// Place timer and have the next set of questions appear
+
+	document.getElementById("title2").innerHTML = "Trailblazers";
 }
