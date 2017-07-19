@@ -31,38 +31,19 @@ function addElement () {
 
 }
 
-// for loop to get text to stay
-// for (i = 0; i < 2; i++) {
-// 	document.getElementById("game").addEventListener("click", addElement);
-// }
-
-// // Practice with LoopS
-// // var text = "Name me: '\"I was the conductor of the Underground Railroad for eight years, and I can say what most conductors can't say; I never ran my train off the track and I never lost a passenger.\"";
-// // var td; 
-// // for (i = 0; i < 2; i++) {
-// // 	td = document.getElementById("game");
-// // 	if (typeof window.addEventListener === "click"){
-// // 		(function(_td) {
-// // 			td.addEventListener("click", function(){
-// // 				console.log(text);
-// // 			});
-// // 		})(text); 
-// // 	}
-// // }
 
 // // create variables for the different options 
-// 	var wrong1 = document.getElementById("truth");
-// 	var wrong2 = document.getElementById("yaa");
-// 	var wrong3 = document.getElementById("nzinga");
-// 	var right = document.getElementById("harriet");
-
-// 	// Select Correct 
-// 	if (right) {
-// 		alert("You got it!"); 
-// 	}
+	var wrong1 = document.getElementById("truth");
+	var wrong2 = document.getElementById("yaa");
+	var wrong3 = document.getElementById("nzinga");
+	var right = document.getElementById("harriet");
 
 
+// Add click event listener to correct button - alert "Righto!"
 
-// right.addEventListener("click", function() {
-// 	alert("Correct!"); 
-// }
+
+right.addEventListener("click", correct);
+
+function correct () {
+	alert("Righto");
+}
