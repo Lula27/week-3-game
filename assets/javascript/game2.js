@@ -39,7 +39,7 @@ function addElement () {
 	var right = document.getElementById("harriet");
 
 
-// Add click event listener to correct button - alert "Righto!"
+// Add click event listener to correct button - alert "Righto!" - give history lesson if right
 
 
 right.addEventListener("click", correct);
@@ -52,5 +52,17 @@ function correct () {
 
 	// Place timer and have the next set of questions appear
 
-	document.getElementById("title2").innerHTML = "Trailblazers";
+}
+
+
+// If wrong...give message - history lesson - learn even if wrong
+wrong1.addEventListener("click", nope);
+
+function nope () {
+	
+	// Add text to section - historical note 
+	document.getElementById("question2").innerHTML = "Naw girl, try again!"; 
+
+	// Place timer and have the next set of questions appear
+
 }
