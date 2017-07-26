@@ -33,9 +33,7 @@ function addElement () {
 
 
 // // create variables for the different options 
-	var wrong1 = document.getElementById("truth");
-	var wrong2 = document.getElementById("yaa");
-	var wrong3 = document.getElementById("nzinga");
+	var wrong = document.getElementsByClassName("wrong");
 	var right = document.getElementById("harriet");
 
 
@@ -45,7 +43,6 @@ function addElement () {
 right.addEventListener("click", correct);
 
 function correct () {
-	alert("Righto");
 
 	// Add text to section
 	document.getElementById("question2").innerHTML = "Correct...on to question 2!"; 
@@ -56,12 +53,12 @@ function correct () {
 
 
 // If wrong...give message - history lesson - learn even if wrong
-wrong1.addEventListener("click", nope);
+wrong.addEventListener("click", nope);
 
 function nope () {
 	
 	// Add text to section - historical note 
-	document.getElementById("question2").innerHTML = "Naw girl, try again!"; 
+	document.getElementsByClassName("wrong").innerHTML = "Naw girl, try again!"; 
 
 	// Place timer and have the next set of questions appear
 
