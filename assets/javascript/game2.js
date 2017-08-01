@@ -58,7 +58,7 @@ wrong1.addEventListener("click", nope);
 function nope () {
 	
 	// Add text to section - historical note 
-	document.getElementById("question2").innerHTML = "Naw girl, try again!"; 
+	document.getElementById("question2").innerHTML = "Incorrect...but Sojourner did say this: I am not going to die, I'm going home like a shooting star."; 
 
 	// Place timer and have the next set of questions appear
 
