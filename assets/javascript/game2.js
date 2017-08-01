@@ -63,3 +63,13 @@ function nope () {
 	// Place timer and have the next set of questions appear
 
 }
+
+// Add image
+var imgw1 = new Image();
+var div = document.getElementById("w1");
+
+imgw1.onload = function() {
+	div.appendChild(imgw1);
+};
+
+imgw1.src = "assets/images/STruth.jpg"
