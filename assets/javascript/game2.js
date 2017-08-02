@@ -64,7 +64,17 @@ function nope () {
 
 }
 
-// Add image
+// Add image - First
+var img0 = new Image();
+var div = document.getElementById("w1");
+
+img0.onload = function() {
+	div.innerHTML += '<img src="'+img.src+"/>';                                                                                                                                                                                                                                                  
+};
+
+img0.src = "assets/images/STruth.jpg"; 
+
+// Add image - Second Run
 var imgw1 = new Image();
 var div = document.getElementById("w1");
 
@@ -73,3 +83,6 @@ imgw1.onload = function() {
 };
 
 imgw1.src = "assets/images/STruth.jpg"
+
+
+
