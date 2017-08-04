@@ -66,6 +66,7 @@ function nope () {
 
 
 // Create Image...as you would with HTML
-var myImage = new Image(100, 200);
+var myImage = new Image(400, 200);
 myImage.src = "assets/images/STruth.jpg"
-console.log(myImage.src); 
+// console.log(myImage.src); 
+document.body.appendChild(myImage);
