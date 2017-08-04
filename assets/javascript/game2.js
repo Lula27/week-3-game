@@ -64,25 +64,8 @@ function nope () {
 
 }
 
-// Add image - First
-var img0 = new Image();
-var div = document.getElementById("w1");
 
-img0.onload = function() {
-	div.innerHTML += '<img src="'+img.src+"/>';                                                                                                                                                                                                                                                  
-};
-
-img0.src = "assets/images/STruth.jpg"; 
-
-// Add image - Second Run
-var imgw1 = new Image();
-var div = document.getElementById("w1");
-
-imgw1.onload = function() {
-	div.appendChild(imgw1);
-};
-
-imgw1.src = "assets/images/STruth.jpg"
-
-
-
+// Create Image...as you would with HTML
+var myImage = new Image(100, 200);
+myImage.src = "assets/images/STruth.jpg"
+console.log(myImage.src); 
