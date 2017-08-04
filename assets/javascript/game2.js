@@ -62,11 +62,14 @@ function nope () {
 
 	// Place timer and have the next set of questions appear
 
-}
-
 
 // Create Image...as you would with HTML
 var myImage = new Image(400, 200);
 myImage.src = "assets/images/STruth.jpg"
 // console.log(myImage.src); 
 document.body.appendChild(myImage);
+
+
+}
+
+
