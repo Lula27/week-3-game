@@ -45,9 +45,14 @@ right.addEventListener("click", correct);
 function correct () {
 
 	// Add text to section
-	document.getElementById("question2").innerHTML = "Correct...on to question 2!"; 
+	document.getElementById("question2").innerHTML = "Nice!"; 
 
-	// Place timer and have the next set of questions appear
+	// Create Image...as you would with HTML
+	var rightOne = new Image(400, 200);
+	rightOne.src = "assets/images/harriet.jpg"
+	// console.log(myImage.src); 
+	document.body.appendChild(rightOne);
+
 
 }
 
