@@ -34,6 +34,7 @@ function addElement () {
 
 // // create variables for the different options 
 	var wrong1 = document.getElementById("truth");
+	var wrong2 = document.getElementById("yaa"); 
 	var right = document.getElementById("harriet");
 
 
