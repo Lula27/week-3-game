@@ -31,7 +31,6 @@ function addElement () {
 
 }
 
-
 // // create variables for the different options 
 	var wrong1 = document.getElementById("truth");
 	var wrong2 = document.getElementById("yaa"); 
@@ -54,7 +53,6 @@ function correct () {
 	// console.log(myImage.src); 
 	document.body.appendChild(rightOne);
 
-
 }
 
 
@@ -69,13 +67,37 @@ function nope () {
 	// Place timer and have the next set of questions appear
 
 
+	// Create Image...as you would with HTML
+	var myImage = new Image(400, 200);
+	myImage.src = "assets/images/STruth.jpg"
+	// console.log(myImage.src); 
+	document.body.appendChild(myImage);
+
+
+}
+
+// If wrong...give message - history lesson - learn even if wrong
+wrong2.addEventListener("click", incorrect);
+
+function incorrect () {
+	
+	// Add text to section - historical note 
+	document.getElementById("question2").innerHTML = "Incorrect...but Yaa Asantewaa did say this:" +  
+	"If you, the men, will not go forward, then we will. We, the women, will" 
+	+ "We will fight the white men. We will fight till the last of us" +
+	"falls in the battelfields."; 
+
+	// Place timer and have the next set of questions appear
+
+
 // Create Image...as you would with HTML
-var myImage = new Image(400, 200);
-myImage.src = "assets/images/STruth.jpg"
+var myImage = new Image(400, 350);
+myImage.src = "assets/images/yaa.jpg"
 // console.log(myImage.src); 
 document.body.appendChild(myImage);
 
 
 }
+
 
 
