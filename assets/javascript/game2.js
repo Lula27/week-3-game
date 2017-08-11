@@ -92,7 +92,7 @@ function incorrect () {
 
 // Create Image...as you would with HTML
 var myImage = new Image(400, 350);
-myImage.src = "assets/images/yaa.jpg"
+myImage.src = "assets/images/yaa2.jpg"
 // console.log(myImage.src); 
 document.body.appendChild(myImage);
 
