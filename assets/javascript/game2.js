@@ -34,6 +34,7 @@ function addElement () {
 // // create variables for the different options 
 	var wrong1 = document.getElementById("truth");
 	var wrong2 = document.getElementById("yaa"); 
+	var wrong3 = document.getElementById("nzinga"); 
 	var right = document.getElementById("harriet");
 
 
@@ -95,6 +96,25 @@ var myImage = new Image(400, 350);
 myImage.src = "assets/images/yaa2.jpg"
 // console.log(myImage.src); 
 document.body.appendChild(myImage);
+
+
+}
+
+wrong3.addEventListener("click", naw);
+
+function naw () {
+	
+	// Add text to section - historical note 
+	document.getElementById("question2").innerHTML = "Incorrect...but Queen Nzinga did say this: ..."; 
+
+	// Place timer and have the next set of questions appear
+
+
+	// Create Image...as you would with HTML
+	var myImage = new Image(400, 200);
+	myImage.src = "assets/images/STruth.jpg"
+	// console.log(myImage.src); 
+	document.body.appendChild(myImage);
 
 
 }
