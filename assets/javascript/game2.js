@@ -112,7 +112,7 @@ function naw () {
 
 	// Create Image...as you would with HTML
 	var myImage = new Image(400, 200);
-	myImage.src = "assets/images/STruth.jpg"
+	myImage.src = "assets/images/nzinga.jpg"
 	// console.log(myImage.src); 
 	document.body.appendChild(myImage);
 
