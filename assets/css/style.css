@@ -8,3 +8,10 @@ body {
 .alignleft {
 	text-align: left;
 }
+
+
+/*Spacing for site*/
+#question2 {
+	padding-top: 20px; 
+	padding-bottom: 20px; 
+}
