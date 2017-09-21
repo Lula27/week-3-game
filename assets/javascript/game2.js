@@ -86,7 +86,7 @@ function incorrect () {
 	document.getElementById("question2").innerHTML = "Incorrect...but Yaa Asantewaa did say this:" +  
 	"If you, the men, will not go forward, then we will. We, the women, will" 
 	+ "We will fight the white men. We will fight till the last of us" +
-	"falls in the battelfields."; 
+	" falls in the battelfields."; 
 
 	// Place timer and have the next set of questions appear
 
