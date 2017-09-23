@@ -35,7 +35,7 @@ function addElement () {
 	var wrong1 = document.getElementById("truth");
 	var wrong2 = document.getElementById("yaa"); 
 	var wrong3 = document.getElementById("nzinga"); 
-	var right = document.getElementById("harriet");
+	var right = document.getElementById("ida");
 
 
 // Add click event listener to correct button - alert "Righto!" - give history lesson if right
@@ -50,7 +50,7 @@ function correct () {
 
 	// Create Image...as you would with HTML
 	var rightOne = new Image(400, 200);
-	rightOne.src = "assets/images/harriet.jpg"
+	rightOne.src = "assets/images/idab.jpg"
 	// console.log(myImage.src); 
 	document.body.appendChild(rightOne);
 
@@ -73,7 +73,6 @@ function nope () {
 	myImage.src = "assets/images/STruth.jpg"
 	// console.log(myImage.src); 
 	document.body.appendChild(myImage);
-
 
 }
 
