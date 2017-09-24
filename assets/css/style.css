@@ -3,6 +3,7 @@
 body {
 	background-color: #fffff;
 	text-decoration-color: #f8f8ff; 
+	padding-left: 10px; 
 }
 
 .alignleft {
@@ -15,3 +16,5 @@ body {
 	padding-top: 20px; 
 	padding-bottom: 20px; 
 }
+
+
