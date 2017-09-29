@@ -104,14 +104,15 @@ wrong3.addEventListener("click", naw);
 function naw () {
 	
 	// Add text to section - historical note 
-	document.getElementById("question2").innerHTML = "Incorrect...but Queen Nzinga did say this: ..."; 
+	document.getElementById("question2").innerHTML = "Incorrect...but the woman way back in the past," +
+	" whose name you've forgoten fought for you." + " You are here now because of her. Thank her."; 
 
-	// Place timer and have the next set of questions appear
+	// Place timer and have the next set of questions appear 
 
 
 	// Create Image...as you would with HTML
-	var myImage = new Image(400, 200);
-	myImage.src = "assets/images/nzinga.jpg"
+	var myImage = new Image(600, 550);
+	myImage.src = "assets/images/ancestor.jpg"
 	// console.log(myImage.src); 
 	document.body.appendChild(myImage);
 
