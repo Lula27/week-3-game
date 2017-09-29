@@ -2,7 +2,7 @@
 
 body {
 	background-color: #fffff;
-	text-decoration-color: #f8f8ff; 
+	text-decoration-color: #C0C0C0; 
 	padding-left: 10px; 
 }
 
@@ -17,4 +17,8 @@ body {
 	padding-bottom: 20px; 
 }
 
+
+.wellwell-large {
+	background-color: #ffffff;
+}
 
