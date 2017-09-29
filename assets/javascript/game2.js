@@ -105,7 +105,8 @@ function naw () {
 	
 	// Add text to section - historical note 
 	document.getElementById("question2").innerHTML = "Incorrect...but the woman way back in the past," +
-	" whose name you forgot fought for you." + " You are here now because of her. Thank her."; 
+	" whose name you forgot fought for you." + " You are here now because of her. Thank her.";  
+	// "Image source: https://eternallybeautifullyblack.tumblr.com/post/57973949570/i-was-a-slave"; 
 
 	// Place timer and have the next set of questions appear 
 

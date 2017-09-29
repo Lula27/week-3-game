@@ -10,15 +10,18 @@ body {
 	text-align: left;
 }
 
+.well {
+	background-color: #000000;
+}
+
+.form { /*Is this working?*/
+	padding-top: 20px; 
+	padding-bottom: 10px; 
+}
 
 /*Spacing for site*/
 #question2 {
 	padding-top: 20px; 
 	padding-bottom: 20px; 
-}
-
-
-.well {
-	background-color: #000000;
 }
 
