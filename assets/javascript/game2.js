@@ -141,8 +141,8 @@ function addElement () {
 
 }
 
-// // create variables for the different options 
-	var wrong1 = document.getElementById("celia");
-	var wrong2 = document.getElementById("gwen"); 
-	var wrong3 = document.getElementById("mae"); 
-	var right = document.getElementById("tyra");
+ // create variables for the different options 
+	var wrong1b = document.getElementById("celia");
+	var wrong2b = document.getElementById("gwen"); 
+	var rightb = document.getElementById("mae"); 
+	var wrong3b = document.getElementById("tyra");
