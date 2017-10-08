@@ -153,7 +153,7 @@ right.addEventListener("click", correct);
 function correct () {
 
 	// Add text to section
-	document.getElementById("question2").innerHTML = "Correct!"; 
+	document.getElementById("cruz").innerHTML = "Correct!"; 
 
 	// Create Image...as you would with HTML
 	var rightOne = new Image(400, 200);
