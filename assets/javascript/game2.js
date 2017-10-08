@@ -142,7 +142,7 @@ function addElement () {
 }
 
 // // create variables for the different options 
-	var wrong1 = document.getElementById("truth");
-	var wrong2 = document.getElementById("yaa"); 
-	var wrong3 = document.getElementById("nzinga"); 
-	var right = document.getElementById("ida");
+	var wrong1 = document.getElementById("celia");
+	var wrong2 = document.getElementById("gwen"); 
+	var wrong3 = document.getElementById("mae"); 
+	var right = document.getElementById("tyra");
