@@ -146,3 +146,19 @@ function addElement () {
 	var wrong2b = document.getElementById("gwen"); 
 	var rightb = document.getElementById("mae"); 
 	var wrong3b = document.getElementById("tyra");
+
+
+right.addEventListener("click", correct);
+
+function correct () {
+
+	// Add text to section
+	document.getElementById("question2").innerHTML = "Correct!"; 
+
+	// Create Image...as you would with HTML
+	var rightOne = new Image(400, 200);
+	rightOne.src = "assets/images/idab.jpg"
+	// console.log(myImage.src); 
+	document.body.appendChild(rightOne);
+
+}
