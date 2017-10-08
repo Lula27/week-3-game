@@ -122,3 +122,27 @@ function naw () {
 
 
 
+// Question 2 - Event Listeners
+// Create New Section w/ Questions
+document.getElementById("game").addEventListener("click", addElement);
+
+
+function addElement () {
+	// Create new div element & git it some content
+	var newDiv = document.createElement("div");
+	// var questionOne = document.createTextNode("Name me: '\"I was the conductor of the Underground Railroad for eight years, and I can say what most conductors can't say; I never ran my train off the track and I never lost a passenger.\"");
+	// newDiv.appendChild(questionOne);
+
+
+	// add newly created element and its content into the DOM
+	var currentDiv = document.getElementById("div1");
+	document.body.insertBefore(newDiv, currentDiv); 
+
+
+}
+
+// // create variables for the different options 
+	var wrong1 = document.getElementById("truth");
+	var wrong2 = document.getElementById("yaa"); 
+	var wrong3 = document.getElementById("nzinga"); 
+	var right = document.getElementById("ida");
