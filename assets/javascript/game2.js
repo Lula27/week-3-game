@@ -162,3 +162,12 @@ function correct () {
 	document.body.appendChild(rightOne);
 
 }
+
+// Button for wrong
+right.addEventListener("click", correct);
+
+function wrong2b () {
+
+	// Add text to section
+	document.getElementById("cruz").innerHTML = "Correct!"; 
+
