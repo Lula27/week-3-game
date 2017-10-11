@@ -171,3 +171,10 @@ function wrong2b () {
 	// Add text to section
 	document.getElementById("cruz").innerHTML = "Correct!"; 
 
+	// Create Image...as you would with HTML
+	var rightOne = new Image(400, 200);
+	rightOne.src = "assets/images/idab.jpg"
+	// console.log(myImage.src); 
+	document.body.appendChild(rightOne);
+
+}
