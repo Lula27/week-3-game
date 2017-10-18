@@ -178,3 +178,6 @@ function wrong2b () {
 	document.body.appendChild(rightOne);
 
 }
+
+// Create for loop to change background color
+var loop = 1; 
