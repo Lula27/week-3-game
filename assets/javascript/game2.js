@@ -181,3 +181,19 @@ function wrong2b () {
 
 // Create for loop to change background color
 var loop = 1; 
+
+	for (i=0; i<3, i++) {
+
+		loop*2; 
+
+	}
+
+	var loop = 1; 
+
+	for (i=0; i<3, i++) {
+
+		loop*2; 
+
+	}
+
+
